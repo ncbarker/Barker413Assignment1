@@ -1,9 +1,9 @@
 ﻿var submit = document.getElementById("submitbutton");
-var iAssignment = Number(document.getElementById("assignments").value);
-var iGroupProject = Number(document.getElementById("groupproject").value);
-var iQuizzes = Number(document.getElementById("quizzes").value);
-var iExams = Number(document.getElementById("exams").value);
-var iIntex = Number(document.getElementById("intex").value);
+var iAssignment = parseInt(document.getElementById("assignments").value);
+var iGroupProject = parseInt(document.getElementById("groupproject").value);
+var iQuizzes = parseInt(document.getElementById("quizzes").value);
+var iExams = parseInt(document.getElementById("exams").value);
+var iIntex = parseInt(document.getElementById("intex").value);
 var iTotalgrade = 0
 var sLetterGrade;
 
