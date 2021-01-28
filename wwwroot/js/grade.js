@@ -1,18 +1,14 @@
-﻿var submit = document.getElementById("submitbutton");
+﻿$("#submitbutton").click(function () {
 
-
-
-
-function calculateGrade() {
-    var iAssignment = document.getElementById("assignments").value;
-    var iGroupProject = document.getElementById("groupproject").value;
-    var iQuizzes = document.getElementById("quizzes").value;
-    var iExams = document.getElementById("exams").value;
-    var iIntex = document.getElementById("intex").value;
+    var iAssignment = $("assignments").value;
+    var iGroupProject = $("groupproject").value;
+    var iQuizzes = $("quizzes").value;
+    var iExams = $("exams").value;
+    var iIntex = $("intex").value;
     var iTotalgrade = 0
     var sLetterGrade;
 
-    alert("This is kind of working");
+    alert("I think this is working?");
     iAssignment = iAssignment * .5;
     iGroupProject = iGroupProject * .1;
     iQuizzes = iQuizzes * .1;
@@ -58,7 +54,6 @@ function calculateGrade() {
         sLetterGrade = "E";
     }
 
-    alert(sLetterGrade);
+    alert("Your final grade is " + sLetterGrade + ".");
     
-
-};
+});
