@@ -9,23 +9,23 @@
     <h2>Grade Calculator:</h2>
     <form>
         <label>Assignments:</label>
-        <input id="assignments" />
+        <input id="assignments" type="number" min="0" max="100" />
         <br />
         <br />
         <label>Group Project:</label>
-        <input id="groupproject" />
+        <input id="groupproject" type="number" min="0" max="100" />
         <br />
         <br />
         <label>Quizzes:</label>
-        <input id="quizzes" />
+        <input id="quizzes" type="number" min="0" max="100"/>
         <br />
         <br />
         <label>Exams:</label>
-        <input id="exams" />
+        <input id="exams" type="number" min="0" max="100"/>
         <br />
         <br />
         <label>INTEX:</label>
-        <input id="intex" />
+        <input id="intex" type="number" min="0" max="100"/>
         <br />
         <br />
         <button onclick="calculateGrade()">Calculate Grade</button>

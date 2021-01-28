@@ -23,13 +23,13 @@ namespace Barker413Assignment1
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsEnvironment("Development"))
-            (
+            { 
                 app.UseDeveloperExceptionPage();
-            )
+            }
             /*else
-            (
+            {
                 //Add Error Page
-            )*/
+            }*/
 
             app.UseDeveloperExceptionPage();
             
@@ -40,11 +40,11 @@ namespace Barker413Assignment1
             app.UseRouting();
 
             app.UseEndpoints (cfg =>
-           (
-                cfg.MapControllerRoute("Default",
-                    "(controller)/(action)/(id?)",
-                    new(controller = "Home", action = "Index")); 
-           )   
+           {
+               cfg.MapControllerRoute("Default",
+                   "{controller}/{action}/{id?}",
+                   new { controller = "Home", action = "Index" });
+           }   
            );
         }
     }
