@@ -1,15 +1,17 @@
 ﻿var submit = document.getElementById("submitbutton");
-var iAssignment = parseInt(document.getElementById("assignments").value);
-var iGroupProject = parseInt(document.getElementById("groupproject").value);
-var iQuizzes = parseInt(document.getElementById("quizzes").value);
-var iExams = parseInt(document.getElementById("exams").value);
-var iIntex = parseInt(document.getElementById("intex").value);
-var iTotalgrade = 0
-var sLetterGrade;
+
 
 
 
 function calculateGrade() {
+    var iAssignment = document.getElementById("assignments").value;
+    var iGroupProject = document.getElementById("groupproject").value;
+    var iQuizzes = document.getElementById("quizzes").value;
+    var iExams = document.getElementById("exams").value;
+    var iIntex = document.getElementById("intex").value;
+    var iTotalgrade = 0
+    var sLetterGrade;
+
     alert("This is kind of working");
     iAssignment = iAssignment * .5;
     iGroupProject = iGroupProject * .1;
